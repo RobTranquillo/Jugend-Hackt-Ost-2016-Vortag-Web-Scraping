@@ -1,0 +1,216 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>webscraping - get data - FAST</title>
+
+    <meta name="description" content="*webscraping - get data - FAST* a presentation for Jugendhackt Ost 17.07.2016 using impress.js, thanks to: Bartek Szopka" />
+    <meta name="author" content="rob tranquillo" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/webscraping.css" rel="stylesheet" />
+</head>
+
+
+<div id="impress">
+    <div id="intro" class="step">
+        <p>Jugendhackt  <br>
+        <h1>web scraping</h1> <br>
+        get the data, <b><i>fast</i></b>!
+        <div class="title_author">//tranquillo</div>
+        </p>
+    </div>
+
+    <div id="prob1" class="step">
+        <p><h3>1) Was ist das Problem?</h3></p>
+    </div>
+
+    <div id="prob2" class="step" >
+        <p>1) Was ist das Problem?</p>
+        <p><h3>Daten sind nicht OpenData</h3></p>
+    </div>
+
+    <div id="prob3" class="step">
+        <p>[OpenData = offen, frei und in strukturierter Form]
+            <br><center> <i>für</i> <b>ALLE! </center></b>
+        </p>
+    </div>
+
+    <div id="prob4" class="step" >
+    <center>
+    <table>
+      <tr><td>
+        <p style='font-size: 30px;'>1) Was ist das Problem?</p><br>
+        <p style='font-size: 30px;'>Daten sind nicht OpenData</p><br>
+        <p><h3>Selbermachen ist angesagt!</h3></p>
+      </td><td>
+        <img src="media/runningstart.gif" height="420" style='border:3px solid #84F5A4'></img>
+      </td></tr>
+    </table>
+    </center>
+    </div>
+
+
+    <div id="scrape1" class="step">
+        <p><h3>2) Was bedeutet <i><b>scraping</b></i>?</h3></p>
+    </div>
+
+    <div id="scrape2" class="step">
+      <center>
+      [Engl.]<b>"to scrape" = etwas zusammenkratzen </b> <br>
+      <i>strukturierte Daten aus dem Internet einlesen</i> <br><br>
+      </center>
+    </div>
+
+    <div id="scrape3" class="step">
+      <center>
+      <b>"OK! OK!" aber wie soll das gehen? o_0</b>
+      </center>
+    </div>
+
+
+    <div id="scrape6" class="step">
+        HTML ist bereits strukturiert. <br><br>
+
+        <b>Also können Computer sie einlesen.</b> <br><br>
+
+    </div>
+
+
+
+    <div id="scrape4" class="step">
+        Exkurs: <b> unser Freund die Webseite</b> <br>
+        <a href="media/html-ul.html">
+        <xmp>
+        <html>
+            Text der Webseite mit einer unsortierten Liste:
+            <ul>
+                <li> Hund </li>
+                <li> Katze </li>
+                <li> Nilpferd </li>
+                <li> Brokkoli </li>
+            </ul>
+        </html>
+        </xmp>
+        </a>
+    </div>
+
+
+    <div id="scrape5" class="step">
+        Exkurs: <b>unser Freund die Webseite</b> <br>
+        <a href="media/html-table.html">
+        <xmp>
+          <html>
+              Text der Webseite mit einer Tabelle:
+              <table border=1>
+                  <tr>
+                      <td> Blau </td>
+                      <td> Gelb </td>
+                  </tr>
+                  <tr>
+                      <td> Schaf </td>
+                      <td> Lama </td>
+                </tr>
+              </table>
+          </html>
+        </xmp>
+        </a>
+    </div>
+
+
+
+    <div id="basics1" class="step">
+      <center>
+      <h3> 3) Grundsätzliches zum web scraping </h3>
+      </center>
+    </div>
+
+
+    <div id="basics2" class="step">
+      <center>
+      <img src="media/streetfighter.png" width="800"></img>
+      <br><pre>             klicken         oder       programmieren </pre>
+      </center>
+    </div>
+
+
+    <div id="basics3" class="step">
+      <h3>Lokales scraping</h3>
+
+      Programmiersprache eurer Wahl
+        <br><tab> -> web-scraping Funktionen
+      <ul>
+        <li>ruby : nokogiri </li>
+        <li>python : beautiful soup</li>
+        <li>php : DOM Module</li>
+        <li>javascript : cheerio</li>
+      </ul>
+    </div>
+
+
+    <div id="basics4" class="step">
+      <h3>Web-Dienste</h3>
+      Beispiele:
+      <ul>
+        <li>https://apifier.com</li>
+        <li>https://dexi.io</li>
+        <li>https://parsehub.com</li>
+        <li>https://import.io</li>
+      </ul>
+    </div>
+
+
+    <div id="ex1" class="step">
+      <h3>4) Jetzt gehts los. </h3>
+      <center>Zeig mal Beispiel!</center>
+    </div>
+
+
+    <div id="ex2" class="step">
+      <i>Beispiel:</i> <br>
+      <b>Neuigkeiten aus dem <img src="media/lego_logo.png" width="50">-Shop</b> <br><br>
+      F12-Taste im Browser -> HTML
+    </div>
+
+
+
+    <div id="ex3" class="step">
+      <center>
+        <h3> https://import.io </h3>
+        <br> -> einfach und kostenlos
+        <br> -> Export in *.csv möglich
+      </center>
+    </div>
+
+    <div id="oview" class="step"></div>
+
+    <div id="exit" class="step">
+      <small>
+      <i>DANKE</i>
+      <br>
+      <br><b>Viel Spaß weiterhin!</b>
+      <br>
+      <br>twitter:   <i>@robtranquillo</i>
+      <br>interwebz: <i>https://offenesdresden.de</i>
+      <br>
+      <br>Vortrag:   https://github.com/robtranquillo/webscraping-impress
+
+      <br><br>
+      <br><b>made with:</b> <i>impress.js, impress-console, arcade-font-generator</i>
+      </small>
+
+    </div>
+
+
+</div>
+
+
+<script src="js/impress-runningOrder.js"></script>
+<script src="js/impress.js"></script>
+<script src="js/impressConsole.js"></script>
+<script>
+      applyRunningOrder();
+      impress().init();
+      impressConsole().init();
+</script>
